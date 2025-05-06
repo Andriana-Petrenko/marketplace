@@ -2,7 +2,7 @@ import React from 'react'
 
 const Shopping = () => {
   return (
-      <ul className="flex flex-row gap-4">
+    <ul className="flex flex-row gap-4">
           <li>
               <button type="button">
                   <svg className="w-6 h-6">
