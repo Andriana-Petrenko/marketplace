@@ -13,7 +13,7 @@ const Search = () => {
                   alt="search"
                 />
           </button>
-       <input type="text" autoComplete="off" autoFocus className="outline-none bg-main text-base font-medium leading-6 text-grey "  placeholder="Search" name="search"/>
+       <input type="text" autoComplete="off" autoFocus className="outline-none bg-main text-base font-medium text-text placeholder-grey focus:text-text "  placeholder="Search" name="search"/>
         </form>
 
   )
