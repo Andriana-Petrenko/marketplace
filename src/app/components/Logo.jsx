@@ -1,11 +1,15 @@
+import Image from 'next/image'
 import React from 'react'
 
-const Logo = () => {
+const Logo = ({width, height}) => {
   return (
-      <svg className="w-[106px] h-[32px]">
-          <use  xlinkHref="/icons/sprite.svg#icon-logo"  />
-      </svg>
-  )
+    <Image width={width}
+    height={height}
+    // className="w-[106px] h-[32px]"
+    src="/icons/logo.svg"
+    alt="logo"
+  />)
 }
 
 export default Logo
+

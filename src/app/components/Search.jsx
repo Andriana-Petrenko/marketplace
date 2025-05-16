@@ -1,15 +1,19 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Search = () => {
     
   return (
-      <form className="w-[216px] border-b-[1px] flex flex-row text-base gap-2">
+      <form className="w-[216px] border-b-[1px] border-text flex flex-row text-base gap-2">
           <button type="submit">
-              <svg className="w-6 h-6">
-                  <use xlinkHref="/icons/sprite.svg#icon-search" />
-              </svg>
+              <Image
+                  width={24}
+                  height={24}
+                  src="/icons/search.svg"
+                  alt="search"
+                />
           </button>
-       <input type="text" autoComplete="off" autoFocus className="outline-none" placeholder="Search" name="search"/>
+       <input type="text" autoComplete="off" autoFocus className="outline-none bg-main text-base font-medium leading-6 text-grey "  placeholder="Search" name="search"/>
         </form>
 
   )
