@@ -1,13 +1,7 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --text: #04000c;
-  --secondary: #a1a0a0;
-  --main: #d5d5d5;
-  --input-grey: #595959;
-  --error: #d53838;
-  --white-text: #fff;
-}
 
 * {
   box-sizing: border-box;
@@ -16,6 +10,36 @@
 }
 
 body {
-  font-weight: 400;
-  color:var(--text);
+  @apply text-text font-normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+li,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }

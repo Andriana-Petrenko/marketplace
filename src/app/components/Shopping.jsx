@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Shopping = () => {
@@ -5,23 +6,32 @@ const Shopping = () => {
     <ul className="flex flex-row gap-4">
           <li>
               <button type="button">
-                  <svg className="w-6 h-6">
-              <use  xlinkHref="/icons/sprite.svg#icon-person"  />
-              </svg>
+                  <Image
+                        width={24}
+                        height={24}
+                        src="/icons/person.svg"
+                        alt="search"
+                    />
               </button>
           </li>
           <li>
               <button type="button">
-                  <svg className="w-6 h-6">
-              <use  xlinkHref="/icons/sprite.svg#icon-favorite"  />
-              </svg>
+                  <Image
+                        width={24}
+                        height={24}
+                        src="/icons/favorite.svg"
+                        alt="search"
+                  />
               </button>
           </li>
           <li>
               <button type="button">
-                  <svg className="w-6 h-6">
-              <use  xlinkHref="/icons/sprite.svg#icon-shopping-bag"  />
-              </svg>
+                  <Image
+                        width={24}
+                        height={24}
+                        src="/icons/shopping_bag.svg"
+                        alt="search"
+                    />
               </button>
           </li>
     </ul>
