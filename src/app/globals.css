@@ -10,7 +10,7 @@
 }
 
 body {
-  @apply text-text font-normal;
+  @apply font-primary text-text font-normal leading-6;
 }
 
 h1,
